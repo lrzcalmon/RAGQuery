@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Models (large files)
+phase1_indexing/models/
+phase2_app/models/
+
+# Qdrant storage
+phase1_indexing/data/qdrant_storage/
+phase2_app/rag_data/qdrant_storage/
+
+# Output
+phase1_indexing/output/
+phase2_app/installer/dist/
+phase2_app/installer/build/
+phase2_app/installer/output/
+
+# User data
+phase2_app/user_data/
+
+# Processed data
+phase1_indexing/data/processed/
+
+# Temp files
+_write_templates.py
+
+# Build artifacts (but not installer/ source files)
+installer/dist/
+installer/build/
+installer/output/
+models/*.gguf
+
+# DDLs: só o exemplo fictício entra no repositório
+ArqsToRAG/*
+!ArqsToRAG/exemplo_loja.ddl
+!ArqsToRAG/exemplo_loja.txt
+data/
+models/
